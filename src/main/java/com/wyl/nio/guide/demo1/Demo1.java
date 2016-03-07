@@ -21,7 +21,7 @@ public class Demo1 {
         RandomAccessFile aFile = new RandomAccessFile(fromData, "rw");
         FileChannel inChannel = aFile.getChannel();
 
-        ByteBuffer buf = ByteBuffer.allocate(128);
+        ByteBuffer buf = ByteBuffer.allocate(1024);
 
         int bytesRead = inChannel.read(buf);
         while (bytesRead != -1) {
@@ -32,8 +32,14 @@ public class Demo1 {
             while(buf.hasRemaining()){
                 System.out.print((char) buf.get());
             }
+            //System.out.println("\n");
+            //buf.rewind();
+            while(buf.hasRemaining()){
+                System.out.print((char) buf.get());
+            }
 
             buf.clear();
+
             bytesRead = inChannel.read(buf);
         }
         aFile.close();

@@ -1,12 +1,14 @@
 package com.wyl.sync;
 
+import java.util.concurrent.locks.ReentrantLock;
+
 /**
  * Created by wangyulin on 4/5/16.
  */
-public class Demo2 {
+public class Demo3 {
 
     public static void main(String[] args) {
-        final Bank bank=new Bank();
+        final Bank bank= new Demo3().new Bank();
         Thread tadd=new Thread(new Runnable() {
             public void run() {
                 while(true){
@@ -41,31 +43,41 @@ public class Demo2 {
 
         tadd.start();
     }
-}
 
-class Bank {
-    private int count = 0;
-
-    public synchronized void addMoney(int money) {
-        synchronized (this) {
-            count += money;
-            System.out.println(System.currentTimeMillis() + "存进 : " + money);
-        }
-    }
-
-    public void subMoney(int money) {
-        synchronized (this) {
-            if (count - money < 0) {
-                System.out.println("余额不足");
-                return;
+    class Bank {
+        private int count = 0;
+        private ReentrantLock lock = new ReentrantLock();
+        public synchronized void addMoney(int money) {
+            lock.lock();
+            try {
+                count += money;
+                System.out.println(System.currentTimeMillis() + "存进 : " + money);
+            } finally {
+                lock.unlock();
             }
-            count -= money;
-            System.out.println(+System.currentTimeMillis() + "取出：" + money);
+        }
+
+        public void subMoney(int money) {
+            lock.lock();
+            try {
+                if (count - money < 0) {
+                    System.out.println("余额不足");
+                    return;
+                }
+                count -= money;
+                System.out.println(+System.currentTimeMillis() + "取出：" + money);
+            } finally {
+                lock.unlock();
+            }
+        }
+
+        //查询
+        public void lookMoney(){
+            System.out.println("账户余额："+count);
         }
     }
 
-    //查询
-    public void lookMoney(){
-        System.out.println("账户余额："+count);
-    }
+
 }
+
+

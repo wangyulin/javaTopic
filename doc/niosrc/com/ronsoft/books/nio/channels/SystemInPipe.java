@@ -1,12 +1,12 @@
 
 package com.ronsoft.books.nio.channels;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.nio.channels.Pipe;
-import java.nio.channels.WritableByteChannel;
 import java.nio.channels.SelectableChannel;
-import java.io.InputStream;
-import java.io.IOException;
+import java.nio.channels.WritableByteChannel;
 
 /**
  * Class which encapsulates System.in as a selectable channel.

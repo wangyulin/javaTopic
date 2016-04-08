@@ -1,12 +1,12 @@
 
 package com.ronsoft.books.nio.channels;
 
-import java.nio.ByteBuffer;
-import java.nio.channels.SocketChannel;
-import java.nio.channels.SelectionKey;
-import java.util.List;
-import java.util.LinkedList;
 import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.SocketChannel;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Specialization of the SelectSockets class which uses a thread pool

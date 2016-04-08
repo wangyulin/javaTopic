@@ -1,10 +1,10 @@
 package com.ronsoft.books.nio.channels;
 
+import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.IntBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.channels.FileLock;
-import java.io.RandomAccessFile;
 import java.util.Random;
 
 /**

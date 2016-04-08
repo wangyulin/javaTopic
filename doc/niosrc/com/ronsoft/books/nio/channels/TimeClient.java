@@ -1,14 +1,14 @@
 
 package com.ronsoft.books.nio.channels;
 
+import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.channels.DatagramChannel;
-import java.net.InetSocketAddress;
 import java.util.Date;
-import java.util.List;
-import java.util.LinkedList;
 import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Request time service, per RFC 868.  RFC 868

@@ -1,14 +1,11 @@
 
 package com.ronsoft.books.nio.channels;
 
-import java.nio.ByteBuffer;
-import java.nio.channels.InterruptibleChannel;
-import java.nio.channels.FileChannel;
-import java.nio.channels.ByteChannel;
-import java.nio.channels.ServerSocketChannel;
-import java.nio.channels.SocketChannel;
 import java.io.FileInputStream;
 import java.net.InetSocketAddress;
+import java.nio.ByteBuffer;
+import java.nio.channels.ByteChannel;
+import java.nio.channels.ServerSocketChannel;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 

@@ -2,10 +2,10 @@
 package com.ronsoft.books.nio.channels;
 
 import java.nio.ByteBuffer;
-import java.nio.channels.Selector;
-import java.nio.channels.SelectionKey;
-import java.nio.channels.SelectableChannel;
 import java.nio.channels.ReadableByteChannel;
+import java.nio.channels.SelectableChannel;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.Selector;
 import java.util.Iterator;
 
 public class TestStdin

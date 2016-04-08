@@ -1,22 +1,19 @@
 
 package com.ronsoft.books.nio.channels;
 
-import java.nio.ByteBuffer;
-import java.nio.MappedByteBuffer;
-import java.nio.CharBuffer;
-import java.nio.channels.FileChannel;
-import java.nio.channels.FileChannel.MapMode;
-import java.nio.channels.Channels;
-import java.nio.channels.GatheringByteChannel;
-import java.nio.channels.SocketChannel;
-import java.nio.channels.ServerSocketChannel;
-import java.nio.charset.Charset;
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
+import java.io.FileInputStream;
 import java.net.InetSocketAddress;
 import java.net.URLConnection;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
+import java.nio.ByteBuffer;
+import java.nio.CharBuffer;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel;
+import java.nio.channels.FileChannel.MapMode;
+import java.nio.channels.GatheringByteChannel;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.SocketChannel;
+import java.nio.charset.Charset;
+import java.util.regex.Pattern;
 
 /**
  * Simple-minded HTTP server using MappedByteBuffers.

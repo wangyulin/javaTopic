@@ -1,11 +1,11 @@
 
 package com.ronsoft.books.nio.channels;
 
+import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.DatagramChannel;
-import java.nio.channels.Selector;
 import java.nio.channels.SelectionKey;
-import java.net.InetSocketAddress;
+import java.nio.channels.Selector;
 
 
 public class TimeServiceSelect extends TimeService

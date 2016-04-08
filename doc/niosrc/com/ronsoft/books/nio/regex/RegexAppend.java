@@ -1,8 +1,8 @@
 
 package com.ronsoft.books.nio.regex;
 
-import java.util.regex.Pattern;
 import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Test the appendReplacement() and appendTail() methods of the

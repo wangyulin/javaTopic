@@ -1,11 +1,6 @@
 
 package com.ronsoft.books.nio.charset;
 
-import java.nio.*;
-import java.nio.charset.*;
-import java.nio.channels.*;
-import java.io.*;
-
 /**
  * Test charset decoding Java New I/O book.
  * Created and tested: Dec, 2001

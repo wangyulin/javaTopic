@@ -1,8 +1,8 @@
 
 package com.ronsoft.books.nio.channels;
 
-import java.nio.channels.SocketChannel;
 import java.net.InetSocketAddress;
+import java.nio.channels.SocketChannel;
 
 /**
  * Demonstrate asynchronous connection of a SocketChannel.

@@ -1,11 +1,10 @@
 
 package com.ronsoft.books.nio.channels;
 
+import java.net.InetAddress;
+import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.DatagramChannel;
-import java.net.SocketAddress;
-import java.net.InetSocketAddress;
-import java.net.InetAddress;
 
 /**
  * Tickle DatagramChannel send() bug.  Attempting to send a datagram

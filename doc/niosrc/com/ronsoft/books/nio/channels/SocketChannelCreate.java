@@ -1,8 +1,6 @@
 
 package com.ronsoft.books.nio.channels;
 
-import java.net.*;
-import java.nio.channels.*;
 import java.io.IOException;
 
 /**

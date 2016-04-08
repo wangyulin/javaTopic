@@ -1,9 +1,9 @@
 
 package com.ronsoft.books.nio.regex;
 
-import java.util.regex.Pattern;
-import java.util.List;
 import java.util.LinkedList;
+import java.util.List;
+import java.util.regex.Pattern;
 
 /**
  * Demonstrate behavior of splitting strings.  The XML output created

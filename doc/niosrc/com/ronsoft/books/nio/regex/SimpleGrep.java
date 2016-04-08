@@ -1,11 +1,11 @@
 
 package com.ronsoft.books.nio.regex;
 
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
-import java.io.FileReader;
 import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Simple implementation of the ubiquitous grep command.

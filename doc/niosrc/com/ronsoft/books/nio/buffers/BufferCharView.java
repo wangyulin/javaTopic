@@ -3,8 +3,8 @@ package com.ronsoft.books.nio.buffers;
 
 import java.nio.Buffer;
 import java.nio.ByteBuffer;
-import java.nio.CharBuffer;
 import java.nio.ByteOrder;
+import java.nio.CharBuffer;
 
 /**
  * Test asCharBuffer view.

@@ -1,11 +1,11 @@
 
 package com.ronsoft.books.nio.channels;
 
+import java.io.File;
+import java.io.IOException;
+import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
-import java.io.File;
-import java.io.RandomAccessFile;
-import java.io.IOException;
 
 /**
  * Create a file with holes in it.

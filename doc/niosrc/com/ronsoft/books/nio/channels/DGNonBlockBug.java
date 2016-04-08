@@ -1,10 +1,10 @@
 
 package com.ronsoft.books.nio.channels;
 
+import java.net.InetSocketAddress;
+import java.net.SocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.DatagramChannel;
-import java.net.SocketAddress;
-import java.net.InetSocketAddress;
 
 /**
  * Test non-blocking DatagramChannel bug.

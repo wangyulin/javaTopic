@@ -1,9 +1,9 @@
 
 package com.ronsoft.books.nio.buffers;
 
+import java.io.RandomAccessFile;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
-import java.io.RandomAccessFile;
 
 public class BufferMap
 {

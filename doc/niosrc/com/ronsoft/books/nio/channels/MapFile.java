@@ -1,11 +1,11 @@
 
 package com.ronsoft.books.nio.channels;
 
+import java.io.File;
+import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
-import java.io.File;
-import java.io.RandomAccessFile;
 
 /**
  * Test behavior of Memory mapped buffer types.  Create a file, write

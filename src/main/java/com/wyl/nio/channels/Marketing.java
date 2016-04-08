@@ -1,11 +1,11 @@
 package com.wyl.nio.channels;
 
+import java.io.FileOutputStream;
 import java.nio.ByteBuffer;
 import java.nio.channels.GatheringByteChannel;
-import java.io.FileOutputStream;
-import java.util.Random;
-import java.util.List;
 import java.util.LinkedList;
+import java.util.List;
+import java.util.Random;
 
 /**
  * Created by wangyulin on 3/22/16.

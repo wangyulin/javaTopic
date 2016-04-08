@@ -1,8 +1,8 @@
 
 package com.ronsoft.books.nio.charset;
 
-import java.nio.charset.Charset;
 import java.nio.ByteBuffer;
+import java.nio.charset.Charset;
 
 /**
  * Charset encoding test.  Run the same input string, which contains

@@ -1,7 +1,5 @@
 package com.wyl.sync;
 
-import java.util.concurrent.locks.ReentrantLock;
-
 /**
  * Created by wangyulin on 4/5/16.
  */

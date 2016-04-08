@@ -1,11 +1,6 @@
 
 package com.ronsoft.books.nio.appendix;
 
-import java.lang.reflect.*;
-import java.util.*;
-import java.util.regex.*;
-import java.io.*;
-
 /**
  * Extract information about a class.  This class was used to generate
  * the quick reference for the NIO book for O'Reilly.  It's kind of ugly

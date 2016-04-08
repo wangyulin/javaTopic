@@ -1,10 +1,10 @@
 package com.wyl.nio.channels;
 
+import java.io.File;
+import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
-import java.io.File;
-import java.io.RandomAccessFile;
 
 /**
  * Created by wangyulin on 3/28/16.

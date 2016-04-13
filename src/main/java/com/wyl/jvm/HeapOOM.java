@@ -1,5 +1,7 @@
 package com.wyl.jvm;
 
+import com.sun.jdi.Bootstrap;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,18 +11,37 @@ import java.util.List;
  -Xms20m
  -Xmx20m
  -XX:+HeapDumpOnOutOfMemoryError
+ -XX:+PrintGCDetails
+ -XX:+ScavengeBeforeFullGC
+ -XX:+UseConcMarkSweepGC
+ -XX:+PrintTenuringDistribution
+ -XX:+PrintGCTimeStamps
+ -XX:+PrintGCApplicationConcurrentTime
+ -XX:+PrintGCApplicationStoppedTime
+ -XX:+PrintCompilation
+ -Xloggc:/Users/wangyulin/workDir/HeapOOM.log
+
+ -Djava.rmi.server.hostname=192.168.1.107
+ -Dcom.sun.management.jmxremote.port=8888
+ -Dcom.sun.management.jmxremote.ssl=false
+ -Dcom.sun.management.jmxremote.authenticate=false
+
  * Created by wangyulin on 4/7/16.
  */
 public class HeapOOM {
 
+    public static String v = null;
     static class OOMObjcet {
     }
 
     public static void main(String[] args) throws InterruptedException {
         List<OOMObjcet> list = new ArrayList<OOMObjcet>();
+        ClassLoader cl;
+        Bootstrap bs;
+        v = new String("abcdefg");
         while(true) {
             list.add(new OOMObjcet());
-            Thread.sleep(10000);
+            Thread.sleep(10);
         }
     }
 

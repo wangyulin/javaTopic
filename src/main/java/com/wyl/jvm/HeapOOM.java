@@ -1,7 +1,5 @@
 package com.wyl.jvm;
 
-import com.sun.jdi.Bootstrap;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,7 +35,7 @@ public class HeapOOM {
     public static void main(String[] args) throws InterruptedException {
         List<OOMObjcet> list = new ArrayList<OOMObjcet>();
         ClassLoader cl;
-        Bootstrap bs;
+        //Bootstrap bs;
         v = new String("abcdefg");
         while(true) {
             list.add(new OOMObjcet());

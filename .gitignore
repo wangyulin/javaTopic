@@ -7,7 +7,6 @@
 .lib/
 dist/*
 target/
-
 # Scala-IDE specific
 
 # Ignore Play! working directory #

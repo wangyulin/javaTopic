@@ -4,12 +4,15 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.concurrent.PriorityBlockingQueue;
+import java.util.concurrent.atomic.AtomicLong;
 
 public class PriorityQueueExample {
 
 	public static void main(String[] args) {
+		//ArrayList<Number> list = new ArrayList<Integer>(); 
 		PriorityQueue<Integer> qi = new PriorityQueue<Integer>(3);
 		PriorityBlockingQueue PriorityBlockingQueue;
+		AtomicLong atomicLong;
         qi.add(5);
         qi.add(2);
         qi.add(1);

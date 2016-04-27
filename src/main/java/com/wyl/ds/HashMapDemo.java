@@ -2,6 +2,7 @@ package com.wyl.ds;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Created by wangyulin on 4/15/16.
@@ -9,7 +10,7 @@ import java.util.Map;
 public class HashMapDemo {
 
     public static void main(String[] args) {
-        HashMap<String, String> map = new HashMap<String, String>();
+    	HashMap<String, String> map = new HashMap<String, String>();
         map.put("语文","1");
         map.put("数学","2");
         map.put("英语","3");

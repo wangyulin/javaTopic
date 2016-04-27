@@ -4,13 +4,13 @@ import java.util.Collection;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import org.junit.Test;
+//import org.junit.Test;
 
 public class ReentrantLockTest {
 	private static ReentrantLock fairLock = new ReentrantLock(true);
 	private static ReentrantLock unfairLock = new ReentrantLock();
 
-	@Test
+	//@Test
 	public void fair() {
 		System.out.println("fair version");
 		for (int i = 0; i < 5; i++) {
@@ -26,7 +26,7 @@ public class ReentrantLockTest {
 		}
 	}
 
-	@Test
+	//@Test
 	public void unfair() {
 		System.out.println("unfair version");
 		for (int i = 0; i < 5; i++) {

@@ -2,12 +2,25 @@ package com.wyl.dp.first;
 
 public abstract class Duck {
 	
-	public abstract void performQuack();
+	public QuackBehavior quackBehavior;
+	public FlyBehavior flyBehavior;
 	
-	public abstract void performFly();
+	public void performQuack() {
+		this.quackBehavior.quack();
+	}
 	
-	public abstract void setFlyBehavior(FlyBehavior fb);
+	public void performFly() {
+		this.flyBehavior.fly();
+	}
 	
-	public abstract void setQuackBehavior(QuackBehavior qb);
+	public void setFlyBehavior(FlyBehavior fb) {
+		flyBehavior = fb;
+	}
+	
+	public void setQuackBehavior(QuackBehavior qb){
+		quackBehavior = qb;
+	}
+	
+	public abstract void display(); 
 	
 }

@@ -3,11 +3,21 @@ package com.wyl.dp.first;
 public class MallardDuck extends Duck {
 	
 	private QuackBehavior quackBehavior;
-	private FlyWithWings flyWithWings;
+	private FlyBehavior flyBehavior;
 	
 	public MallardDuck() {
 		quackBehavior = new Quack();
-		flyWithWings = new FlyWithWings();
+		flyBehavior = new FlyWithWings();
+	}
+	
+	@Override
+	public void setFlyBehavior(FlyBehavior fb) {
+		this.flyBehavior = fb;
+	}
+
+	@Override
+	public void setQuackBehavior(QuackBehavior qb) {
+		this.quackBehavior = qb;
 	}
 	
 	public void performQuack() {
@@ -15,11 +25,10 @@ public class MallardDuck extends Duck {
 	}
 	
 	public void performFly() {
-		flyWithWings.fly();
+		flyBehavior.fly();
 	}
 	
 	public void display() {
 		System.out.println("I'm a real Mallard duck !");
 	}
-	
 }

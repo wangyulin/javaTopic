@@ -14,6 +14,8 @@ class MyThread extends Thread{
 public class ThreadTest {  
     public static void main(String[] args) {  
         // 启动3个线程t1,t2,t3；每个线程各卖10张票！
+    	ThreadLocal tl = null;
+		tl.set("");
         MyThread t1=new MyThread();
         MyThread t2=new MyThread();
         MyThread t3=new MyThread();

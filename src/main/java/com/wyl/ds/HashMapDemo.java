@@ -1,7 +1,10 @@
 package com.wyl.ds;
 
 import java.util.HashMap;
-import java.util.Map;
+import java.util.LinkedHashMap;
+import java.util.Map.Entry;
+import java.util.TreeMap;
+import java.util.Vector;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -10,6 +13,8 @@ import java.util.concurrent.ConcurrentHashMap;
 public class HashMapDemo {
 
     public static void main(String[] args) {
+    	LinkedHashMap set;
+    	TreeMap tmap;
     	HashMap<String, String> map = new HashMap<String, String>();
         map.put("语文","1");
         map.put("数学","2");
@@ -23,7 +28,7 @@ public class HashMapDemo {
         
         map.get("");
 
-        for(Map.Entry<String,String> entry : map.entrySet()) {
+        for(Entry<String, String> entry : map.entrySet()) {
             System.out.println(entry.getKey() + " : " + entry.getValue());
         }
     }
